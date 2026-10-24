@@ -491,14 +491,14 @@ section{
     backdrop-filter: blur(15px);
     box-shadow: 0 25px 50px rgba(0,0,0,.6), inset 0 0 20px rgba(0,234,255,.05);
     
-    /* Flex column setup jisse andari box automatically center ho jayega */
+    
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
 
 .jersey-img-box {
-    display: inline-block; /* Yeh border ko image ke exact size me set karega */
+    display: inline-block; 
     max-width: 100%; 
     margin-bottom: 25px;
     border-radius: 15px; 
@@ -509,10 +509,10 @@ section{
 }
 
 .jersey-img-box img {
-    display: block; /* Niche aane wala extra space hatane ke liye */
+    display: block; 
     max-width: 100%;
-    height: auto; /* Height apne aap image ke aspect ratio se adjust hogi */
-    max-height: 600px; /* Optional cap taaki bohot badi na ho jaye */
+    height: auto; 
+    max-height: 600px; 
     object-fit: cover; 
     transition: transform 0.4s ease;
 }
@@ -1303,7 +1303,7 @@ footer p{
     .qr-modal-content { padding: 28px 18px 20px; }
     .audio-player-container { top: 75px; left: 5px; transform: scale(0.7); }
     .logo span{ font-size:0; }
-    .logo span::after{ content:"TEAM NAME"; font-size:12px; font-weight:800; background: linear-gradient(90deg, #00eaff, #ff00c8); -webkit-background-clip:text; background-clip:text; color:transparent; letter-spacing:.5px; }
+    .logo span::after{ content:"AV UNITED ESPORTS"; font-size:12px; font-weight:800; background: linear-gradient(90deg, #00eaff, #ff00c8); -webkit-background-clip:text; background-clip:text; color:transparent; letter-spacing:.5px; }
     .timeline::before{ left:10px; }
     .timeline-item, .timeline-item:nth-child(even){ width:100%; left:0; text-align:left; padding-left:35px; padding-right:0; }
 }
