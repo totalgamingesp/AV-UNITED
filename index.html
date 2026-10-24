@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AV UNITED ESPORTS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="tgBgGallery" aria-hidden="true">
+        <img src="av 1 akash.png" alt="">
+        <img src="av 2 moazzam.png" alt="">
+        <img src="av 3 anuj.png" alt="">
+        <img src="av 4 ali.png" alt="">
+    </div>
+
+<nav>
+    <div class="logo">
+        <img src="av logo.jpeg" alt="Team Logo" class="logo-img">
+        <span>AV UNITED ESPORTS</span>
+    </div>
+    <div class="nav-right">
+        <a href="https://www.youtube.com/@AV-United" target="_blank" class="nav-icon-btn yt-nav-btn" title="YouTube">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+        </a>
+        <button class="nav-icon-btn donate-nav-btn" id="navDonateBtn" title="Donate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+        </button>
+        <!-- MENU BUTTON -->
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+</nav>
+
+<!-- FIXED AUDIO PLAYER -->
+<div class="audio-player-container">
+    <button class="speaker-btn" id="speakerBtn" title="Play Music">
+        <svg id="icon-speaker-mute" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+        <svg id="icon-speaker-play" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+    </button>
+    <div class="audio-list-panel" id="audioListPanel">
+        <div class="audio-header">TEAM SOUNDTRACKS</div>
+        <ul class="audio-tracks" id="audioTracks">
+            <li data-src="naya_soundtrack_1.mp3">🎵 Naya Song 1 Yahan</li>
+            <li data-src="naya_soundtrack_2.mp3">🔥 Naya Song 2 Yahan</li>
+        </ul>
+    </div>
+    <audio id="mainAudioPlayer"></audio>
+</div>
+
+<div class="menu-panel" id="menuPanel">
+    <a href="#home">🏠 Home</a>
+    <a href="#players">👥 Players</a>
+    <a href="#merch">👕 Jersey</a>
+    <a href="#about">🏆 Team</a>
+    <a href="#gallery">🖼 Gallery</a>
+    <a href="#support">☕ Support Us</a>
+</div>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <div class="hero-pill-tag">
+            <span class="pulse-dot"></span>
+            <span>OFFICIAL ESPORTS TEAM</span>
+        </div>
+
+        <h1>AV UNITED<br>ESPORTS</h1>
+        
+        <p>
+            Welcome to the world of AV United Esports. 
+            Meet the players, explore their journey and discover the moments that made AV unforgettable.
+        </p>
+
+        <div class="hero-actions-container">
+            <a href="#players" class="hero-button">MEET THE PLAYERS</a>
+        </div>
+    </div>
+</section>
+
+<section id="players">
+    <div class="section-title reveal">
+        <span>Meet The Squad</span>
+        <h2>OUR PLAYERS</h2>
+    </div>
+    <div class="players-grid">
+        
+        <div class="player-card reveal">
+            <div class="player-image"><img src="av 1 akash.png" alt="Player 1"></div>
+            <div class="player-info">
+                <div class="player-number">PLAYER 01</div>
+                <h3 class="player-name">AV.Matrix</h3>
+                <div class="player-details">
+                    <div class="detail"><strong>Real Name</strong><span>Akash Yadav</span></div>
+                    <div class="detail"><strong>Game Name</strong><span>AV.Matrix</span></div>
+                    <div class="detail"><strong>Game ID</strong><span>361751262</span></div>
+                    <div class="detail"><strong>Role</strong><span>Primary Rusher</span></div>
+                    <div class="detail"><strong>DOB</strong><span>25 July 2010</span></div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="player-card reveal">
+            <div class="player-image"><img src="av 2 moazzam.png" alt="Player 2"></div>
+            <div class="player-info">
+                <div class="player-number">PLAYER 02</div>
+                <h3 class="player-name">AV.Fighter</h3>
+                <div class="player-details">
+                    <div class="detail"><strong>Real Name</strong><span>Moazzam MHD</span></div>
+                    <div class="detail"><strong>Game Name</strong><span>AV.Fighter</span></div>
+                    <div class="detail"><strong>Game ID</strong><span>1904862708</span></div>
+                    <div class="detail"><strong>Role</strong><span>Secondry Rusher</span></div>
+                    <div class="detail"><strong>DOB</strong><span>08 Dec 2010</span></div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="player-card reveal">
+            <div class="player-image"><img src="av 3 anuj.png" alt="Player 3"></div>
+            <div class="player-info">
+                <div class="player-number">PLAYER 03</div>
+                <h3 class="player-name">AV.Batman</h3>
+                <div class="player-details">
+                    <div class="detail"><strong>Real Name</strong><span>Anuj Maurya</span></div>
+                    <div class="detail"><strong>Game Name</strong><span>AV.Batman</span></div>
+                    <div class="detail"><strong>Game ID</strong><span>4322442999</span></div>
+                    <div class="detail"><strong>Role</strong><span>IN GAME LEADER</span></div>
+                    <div class="detail"><strong>DOB</strong><span>07 Dec 2009S</span></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="player-card reveal">
+            <div class="player-image"><img src="av 4 ali.png" alt="Player 4"></div>
+            <div class="player-info">
+                <div class="player-number">PLAYER 04</div>
+                <h3 class="player-name">AV.Zelta</h3>
+                <div class="player-details">
+                    <div class="detail"><strong>Real Name</strong><span>Ali Khan</span></div>
+                    <div class="detail"><strong>Game Name</strong><span>AV.Zelta</span></div>
+                    <div class="detail"><strong>Game ID</strong><span>2311102762</span></div>
+                    <div class="detail"><strong>Role</strong><span>Sniper</span></div>
+                    <div class="detail"><strong>DOB</strong><span>25 March 2010</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="merch">
+    <div class="section-title reveal">
+        <span>Represent The AV United Esports</span>
+        <h2>OFFICIAL JERSEY</h2>
+    </div>
+    <div class="jersey-showcase reveal">
+        <div class="jersey-img-box">
+            
+            <img src="av new jersy.jpeg" alt="Official Team Jersey">
+        </div>
+        <div class="jersey-actions">
+            <button class="hero-button view-btn" id="viewJerseyBtn">VIEW</button>
+            <button class="hero-button buy-btn" id="buyJerseyBtn">BUY NOW</button>
+        </div>
+    </div>
+</section>
+
+
+<div class="jersey-modal" id="jerseyModal">
+    <div class="jersey-modal-backdrop" id="jerseyModalBackdrop"></div>
+    <button class="jersey-modal-close" id="jerseyModalClose">✖</button>
+    <div class="jersey-modal-content" id="jerseyModalScrollArea">
+        <img src="av new jersy.jpeg" alt="Jersey Zoomed" class="jersey-zoom-img" id="jerseyModalImg">
+    </div>
+</div>
+
+<section id="about">
+    <div class="section-title reveal">
+        <span>The Legacy</span>
+        <h2>ABOUT AV UNITED</h2>
+    </div>
+    <div class="team-section reveal">
+        <div class="team-box">
+            <h3>AV UNITED ESPORTS</h3>
+            <p>
+                🔥 Welcome to AV United Esports! 🔥 <br>
+
+                "We are more than just a team, we are a family of gamers, dreamers, and champions pushing the limits of competitive gaming.
+                 From intense tournament highlights to behind-the-scenes moments, this is where you'll find the true spirit of AV United Esports.
+                  We play to win, but we also play to inspire. Join us on our journey as we take AV United from India to the global stage."
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <div class="section-title reveal">
+        <span>Memorable Moments</span>
+        <h2>GALLERY</h2>
+    </div>
+    <div class="gallery">
+       
+        <div class="gallery-item reveal">
+            <img src="av photo 1.jpeg" alt="Highlight 1">
+            <div class="gallery-overlay">
+                <h3>AV UNITED LINEUP</h3>
+                <p>2026</p>
+            </div>
+        </div>
+        <div class="gallery-item reveal">
+            <img src="av photo 2.jpeg" alt="Highlight 2">
+            <div class="gallery-overlay">
+                <h3>ALL MEMBERS</h3>
+                <p>2026</p>
+            </div>
+        </div>
+        <div class="gallery-item reveal">
+            <img src="av photo 3.jpeg" alt="Highlight 3">
+            <div class="gallery-overlay">
+                <h3>DEADLY AV SQUAD</h3>
+                <p>2026</p>
+            </div>
+        </div>
+        <div class="gallery-item reveal">
+            <img src="av photo 4.jpeg" alt="Highlight 4">
+            <div class="gallery-overlay">
+                <h3>FUN WITH FIGHTER</h3>
+                <p>2026</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="timeline-title reveal">WINNING TOURNAMENTS SOON</div>
+    <div class="timeline-title-line"></div>
+    <div class="timeline">
+        
+        <div class="timeline-item reveal">
+            <div class="timeline-content">
+                <h3>2027</h3>
+                <div class="timeline-tournament">
+                    <span>FFMIC BR SOON</span>
+                    <span class="timeline-trophy">🏆</span>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="timeline-content">
+                <h3>2027</h3>
+                <div class="timeline-tournament">
+                    <span>FFMIC CS SOON</span>
+                    <span class="timeline-trophy">🏆</span>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="timeline-content">
+                <h3>2027</h3>
+                <div class="timeline-tournament">
+                    <span>FFMIC FALL SOON</span>
+                    <span class="timeline-trophy">🏆</span>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="timeline-content">
+                <h3>2027</h3>
+                <div class="timeline-tournament">
+                    <span>FFMAI SOON</span>
+                    <span class="timeline-trophy">🏆</span>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item reveal">
+            <div class="timeline-content">
+                <h3>2027</h3>
+                <div class="timeline-tournament">
+                    <span>EWC,FFWS SOON</span>
+                    <span class="timeline-trophy">🏆</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="support" class="support-section reveal">
+    <div class="support-card">
+        <div class="support-badge">☕ FUEL THE GRIND</div>
+        <h2>Support The ESPORTS TEAM</h2>
+        <p class="support-tagline">
+            SUPPORT US FOR OUR ESPORTS JOURNEY & MOTIVATE US. THANK YOU.
+        </p>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+            <div class="qr-container" id="qrTrigger" title="Click to enlarge QR Code" style="margin-bottom: 0;">
+                <div class="qr-glow-wrapper">
+                   
+                    <img src="av qr.jpeg" alt="Scan to Support" class="qr-image" id="mainQrImg">
+                </div>
+                <span class="qr-hint">🔍 Tap to Zoom QR</span>
+            </div>
+
+            <div class="upi-id-box upi-copy-btn" title="Click to copy UPI ID" style="margin-bottom: 25px;">
+                <span class="upi-label">UPI ID:</span>
+                
+                <span class="upi-text">7080825171@ybl</span>
+            </div>
+        </div>
+
+        <div class="supported-apps">
+            <span>Scan with any UPI App:</span>
+            <div class="apps-badges">
+                <span class="app-pill">GPay</span>
+                <span class="app-pill">PhonePe</span>
+                <span class="app-pill">Paytm</span>
+                <span class="app-pill">BHIM / Any UPI</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="qr-modal" id="qrModal">
+    <div class="qr-modal-backdrop" id="qrModalBackdrop"></div>
+    <div class="qr-modal-content">
+        <button class="qr-modal-close" id="qrModalClose">✖</button>
+        <div class="modal-header-tag">SCAN TO PAY ANY AMOUNT</div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+            <div class="modal-qr-frame">
+                
+                <img src="av qr.jpeg" alt="Scan QR Enlarge" class="modal-qr-img">
+            </div>
+
+            <div class="upi-id-box modal-upi-box upi-copy-btn" title="Click to copy UPI ID">
+                <span class="upi-label">UPI ID:</span>
+                
+                <span class="upi-text">7080825171@ybl</span>
+            </div>
+        </div>
+
+        <div class="modal-pay-instruction">
+            <span>Accepting all UPI Apps • PhonePe • GPay • Paytm</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="toast" id="toast"></div>
+
+<footer>
+    <h2>AV UNITED ESPORTS</h2>
+    <p>|| © Presented By "AV UNITED TEAM" & @TG.Universe-07 ||</p>
+</footer>
+
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const menuPanel = document.getElementById("menuPanel");
+menuBtn.addEventListener("click", () => menuPanel.classList.toggle("show"));
+document.addEventListener("click", (event) => {
+    if(menuPanel.classList.contains("show") && !menuPanel.contains(event.target) && !menuBtn.contains(event.target)){
+        menuPanel.classList.remove("show");
+    }
+});
+document.querySelectorAll(".menu-panel a").forEach(link => { link.addEventListener("click", () => menuPanel.classList.remove("show")); });
+
+
+const revealElements = document.querySelectorAll(".reveal");
+function revealOnScroll(){
+    const windowHeight = window.innerHeight;
+    revealElements.forEach(el => { if(el.getBoundingClientRect().top < windowHeight - 80) el.classList.add("active"); });
+}
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+
+
+const tgBgImages = document.querySelectorAll("#tgBgGallery img");
+let tgBgIndex = 0;
+function changeTgBackground(){
+    if(tgBgImages.length === 0) return;
+    tgBgImages.forEach((img,index)=>{ img.classList.toggle("active", index === tgBgIndex); });
+    tgBgIndex++; if(tgBgIndex >= tgBgImages.length) tgBgIndex = 0;
+}
+changeTgBackground();
+setInterval(changeTgBackground, 5000);
+
+
+const qrTrigger = document.getElementById("qrTrigger");
+const qrModal = document.getElementById("qrModal");
+const qrModalClose = document.getElementById("qrModalClose");
+const qrModalBackdrop = document.getElementById("qrModalBackdrop");
+const donateFloatBtn = document.getElementById("donateFloatBtn");
+const navDonateBtn = document.getElementById("navDonateBtn");
+
+function openQrModal() {
+    if(qrModal) {
+        qrModal.classList.add("show");
+        document.body.style.overflow = "hidden";
+    }
+}
+function closeQrModal() {
+    if(qrModal) {
+        qrModal.classList.remove("show");
+        document.body.style.overflow = "";
+    }
+}
+if(qrTrigger) qrTrigger.addEventListener("click", openQrModal);
+if(qrModalClose) qrModalClose.addEventListener("click", closeQrModal);
+if(qrModalBackdrop) qrModalBackdrop.addEventListener("click", closeQrModal);
+if(donateFloatBtn) donateFloatBtn.addEventListener("click", openQrModal);
+if(navDonateBtn) navDonateBtn.addEventListener("click", openQrModal);
+
+
+const viewJerseyBtn = document.getElementById("viewJerseyBtn");
+const buyJerseyBtn = document.getElementById("buyJerseyBtn");
+const jerseyModal = document.getElementById("jerseyModal");
+const jerseyModalClose = document.getElementById("jerseyModalClose");
+const jerseyModalBackdrop = document.getElementById("jerseyModalBackdrop");
+
+viewJerseyBtn.addEventListener("click", () => {
+    jerseyModal.classList.add("show");
+    document.body.style.overflow = "hidden";
+});
+
+buyJerseyBtn.addEventListener("click", () => {
+    showToastMessage("🚨 Jersey Available Soon!");
+});
+
+function closeJerseyModalFunc() {
+    jerseyModal.classList.remove("show");
+    document.body.style.overflow = "";
+}
+jerseyModalClose.addEventListener("click", closeJerseyModalFunc);
+jerseyModalBackdrop.addEventListener("click", closeJerseyModalFunc);
+
+
+const toastEl = document.getElementById("toast");
+function showToastMessage(msg) {
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add("show");
+    setTimeout(() => toastEl.classList.remove("show"), 3000);
+}
+
+document.querySelectorAll('.upi-copy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        navigator.clipboard.writeText("yahan_naya_upi_id_lagega@ybl").then(() => {
+            showToastMessage("✅ UPI ID Copied!");
+        }).catch(err => {
+            console.error('Failed to copy text: ', err);
+        });
+    });
+});
+
+
+document.querySelectorAll(".menu-btn, .hero-button, .menu-panel a, .audio-tracks li, .nav-icon-btn").forEach(el => {
+    const glow = document.createElement("span");
+    glow.className = "tg-edge-glow";
+    el.appendChild(glow);
+    el.addEventListener("mousemove", e => {
+        const rect = el.getBoundingClientRect();
+        const angle = Math.atan2(e.clientY - (rect.top + rect.height/2), e.clientX - (rect.left + rect.width/2)) * 180 / Math.PI + 90;
+        glow.style.setProperty("--edge-angle", angle + "deg");
+        glow.classList.add("active");
+    });
+    el.addEventListener("mouseleave", () => glow.classList.remove("active"));
+});
+
+
+const speakerBtn = document.getElementById('speakerBtn');
+const audioListPanel = document.getElementById('audioListPanel');
+const audioTracks = document.querySelectorAll('.audio-tracks li');
+const mainAudioPlayer = document.getElementById('mainAudioPlayer');
+const muteIcon = document.getElementById('icon-speaker-mute');
+const playIcon = document.getElementById('icon-speaker-play');
+
+speakerBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); 
+    audioListPanel.classList.toggle('show');
+    speakerBtn.classList.toggle('active');
+});
+
+document.addEventListener('click', (e) => {
+    if (!speakerBtn.contains(e.target) && !audioListPanel.contains(e.target)) {
+        audioListPanel.classList.remove('show');
+        speakerBtn.classList.remove('active');
+    }
+});
+
+audioTracks.forEach(track => {
+    track.addEventListener('click', function() {
+        const src = this.getAttribute('data-src');
+        if (this.classList.contains('playing')) {
+            mainAudioPlayer.pause();
+            this.classList.remove('playing');
+            muteIcon.style.display = 'block';
+            playIcon.style.display = 'none';
+            return;
+        }
+        audioTracks.forEach(t => t.classList.remove('playing'));
+        this.classList.add('playing');
+        muteIcon.style.display = 'none';
+        playIcon.style.display = 'block';
+        mainAudioPlayer.src = src;
+        mainAudioPlayer.play().catch(error => console.log("Audio play failed:", error));
+    });
+});
+
+mainAudioPlayer.addEventListener('ended', () => {
+    audioTracks.forEach(t => t.classList.remove('playing'));
+    muteIcon.style.display = 'block';
+    playIcon.style.display = 'none';
+});
+</script>
+
+</body>
+</html>
